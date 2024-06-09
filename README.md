@@ -38,3 +38,5 @@ Use the following command to run the application from Gintarine.Api folder:
 ```bash
 dotnet run
 ```
+
+Swagger UI with endpoints examples on how to use them should be available here: http://localhost:5057/swagger/index.html
