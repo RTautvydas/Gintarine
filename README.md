@@ -34,7 +34,7 @@ Update the `appsettings.json` to include your post API url and key:
 }
 ```
 ### 3. Run the Application
-Use the following command to run the application:
+Use the following command to run the application from Gintarine.Api folder:
 ```bash
 dotnet run
 ```
