@@ -77,7 +77,9 @@ public class ClientsService : IClientsService
         try
         {
             var postResult = await _postApiClient.SearchPostCode(client.Address);
-            if (postResult.Error == default && PostCodeValidator.IsValidPostcode(postResult.PostCode))
+            if (postResult.Error == default && 
+                PostCodeValidator.IsValidPostcode(postResult.PostCode) &&
+                !client.PostCode.Equals(postResult.PostCode))
             {
                 client.PostCode = postResult.PostCode;
                 await _genericRepository.Update(client);
